@@ -14,7 +14,7 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Bryce's Project Journal
+  title: Bryce's Project Journal.
   tagline: Be Good. 
   date_format: "%b %-d, %Y"
   style: green
