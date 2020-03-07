@@ -4,7 +4,7 @@ email: bjrowedev@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
  This blog will detail my journey at my workplacement at blueberry IT
 show_excerpts: true # set to true to show excerpts on the homepage
-baseurl: /texture
+baseurl: /projectjournal
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
