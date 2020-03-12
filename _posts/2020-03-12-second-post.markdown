@@ -29,11 +29,9 @@ But I have been working on several things which will help me with main project:
     
     * Requires some uncoupling of features, might be able to use some of the ideas in the actual project
     
-![CSV tool screenshot](/assets/csvtool.PNG =200x)
+![CSV tool screenshot](/assets/csvtool.PNG)
     
-<p style=text-align:center;color:red;>
 (Yes The interface is kinda gross at the moment )
-</p>
 
 
 * Research into the XeroAPI 
