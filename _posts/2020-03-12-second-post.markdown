@@ -28,6 +28,9 @@ But I have been working on several things which will help me with main project:
     * Practice using a sql database instance as it could be a decent option to store data(if desirable)
     
     * Requires some uncoupling of features, might be able to use some of the ideas in the actual project
+    
+    ![CSV tool screenshot](/assets/csvtool.PNG)
+    (Yes The interface is kinda gross at the moment )
 
 
 * Research into the XeroAPI 
