@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Draft  | OleDB workaround"
+date:   2020-06-02 10:40:00 +1200
+---
+
+I've been having issues porting some of the functionality from .net framework forms to .net core.
+One particular issue has been getting OleDB to work in the new project.
+
+I was previously using OleDB as  a simple way to map items from the customer invoices csv file provided by CSP to a local database to easily modify and export into a datatable. 
+However I came to find that OleDB wouldnt work on .net core after several failed troubleshooting attempts such as
+
+- changing the builds target enviroment to 32 bit to hopefully avoid dependency issues
+- changing database providers in the connection string, 
+
+So I eventually gave up on OleDB as an option and implemented the use of a package in visual studio named "csv helper" which provided a convenient solution to take the raw text and convert into a datatable for me to work with.
+This solution is more robust solution than the original because OleDB is a depreciated technology and heavier with more conversions and a local database instance running. 
