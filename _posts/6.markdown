@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Draft  | Security Concerns"
+date:   2020-06-02 10:40:00 +1200
+---
+
+Since the previous blog I've spent some time considering the state of security of my applications
+Several pieces of stored information in particular concern me 
+
+- CSP Login details 
+	- This process is easily automated, however that means that the login details are required by the application and need to be stored somewhere
+- Xero Client ID and Secret
+	- These variables must also be present and retrieved storage for the application to function 
+
+Ultimately having these files on the server is a security risk 
+
+Here are several options ive been exploring 
+
+- Encryption 
+	- Storing the information in encrypted files could slow potential attackers down however given enough determination and compute power this would be trivial to crack. 
+- Plain text in code 
+	- Unsecure, anyone with access to the source or decompiles the program can find sensitive information with ease 
+- Security through obscurity 
+	- Nesting and/or splitting the files amongst the build to make it less obvious to where the information is stored. Still  insecure but better than plain text
+
+Because of the nature of the Xero Oauth login process requiring manual input,
+I am leaning towards not including automatic login for the CSP Invoice download process. 
+Of course, this limits the number of personell able to login and complete the process. However, the user would already be required to be trusted with the xero login details therefore it would be a trusted employee in the first place who is using the system. 
+
+This means, I can avoid storing login credentials entirely 
+
+I suspect that it is not as important to store client ID and client secret because the API will deny any access to the application if proper xero login credentials are not provided. 
+If the user were to obtain these details, it would invalidate the application as an avenue of attack as the account would accesible through the xero website.
+A concern i have with this though is that xeros API call limitation could be exploited through malicious attacks(Failed login requests) but I need to look more into this issue . 
