@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Draft  | Views"
+date:   2020-06-02 10:40:00 +1200
+---
+
+
+Over the past several days i have been considering the interface of the application, 
+particularly to provide feedback upon making a request so the user knows what information has been posted and if it has been successful
+One advantage to shifting to an mvc architecture is that the controller can request a specific view for conditions such as the request being successful or not. 
+
+For example if a 401 is returned, the controller will display a view informing the client that a connection could not be established 
+
+Or, if a 500 error is produced, the controller could return a view explaining that the configuration provided cannot be used to make a request against the xero application 
+
+upon sending invoices, I plan to invoices in the response to be defined and stored via the model. 
+This allows the controller to produce a view containing each of the invoices sent and their statuses.
+
+This will allow the end user to verify the completion of the operation and since this is a web page i can format it nicey for better readibilty, thereforr faster verification
+
+As for the design of the view i plan to keep it simple to keep readibily and borrow design elements from bueberry such as 
+
+- Color scheme 
+- Logo
+To keep a familiar, in house style. 
+
+A following blog will detail my implementation of this. 
