@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Draft  | issues with the xero wrapper"
+date:   2020-06-02 10:40:00 +1200
+---
+
+After not being able to send invoices through xero's api wrapper I looked for potential alternatives
+I spent some time looking through the xero api docs at .....  i stumbled upon an entry regarding postman. 
+I learned that postman was a tool used for testing apis through executing web requests. 
+The xero documenation contained a link a saved configuration setup to test a few basic calls against xeros api
+
+To configure postman, I had to enter xero connection details including
+- ClientID 
+- ClientSecret
+- Callback uri
+- scope
+
+running the 'requets token' feature i was able to retrieve a access token after a browser xero login prompt
+this token is used in authorizing further api calls
+
+so far pretty siimilar to the current setup in my application
+
+further features such as  retrieve invoice allowed me to view particular details such as a the headers used in the request.. important ones to note such as xero-tenant-id a field i previously did not realize was mandatory for the request. 
+
+Postman also allows the option to view the request as code.
+The option they presented for c# was a simple method which used restsharp a c# http client, similar enough to the native one for me to understand it pretty much right out the box 
+this code revealed. important factors such as which headers were actually relevant for the request as postman gives many which may be omitted for my purposes.
