@@ -1,0 +1,16 @@
+I have begun playing around with the Xero API using their Xeronetstandard package available.
+
+This has seen mixed results, following the tutorials available on xeronetstandards github repository I have  succesfully been able to complete xeros authorization process to create a connection and login to retrieve an api access token  
+
+through use of this token I was also able to retrieve data through particular entry points such as tenant details and contact information and have this data stored in objects created from predefined classes in the xero API wrapper 
+
+However, I am facing difficulty in posting information to the API with different status errors as i've been playing around with it. 
+I consider that i might missing the correct privileges or providing incorrect in my request however the status errors are a little vague as is the documentation provided by xero about what could be causing the issues
+
+
+I also shifted from using forms to test routines into a new MVC core net application, this should be advantages in several ways such as 
+- the application is now more portable being able to target Linux platforms (very common web server environment) amongst other systems 
+- the application can be conveniently accessed from theoretically anywhere
+- Models Views Controllers architecture is familiar to most programmers therefore easier to maintain if needed in the future.
+
+Going forward I am looking into getting posting data to the API working
