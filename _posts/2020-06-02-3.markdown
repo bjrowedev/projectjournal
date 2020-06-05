@@ -5,15 +5,22 @@ date:   2020-06-02 10:40:00 +1200
 ---
 issues understanding the xero wrapper 
 
-After not being able to send invoices through xero's api wrapper I looked for potential alternatives. I spent some time looking through the xero api docs at .....  I stumbled upon an entry regarding postman.  I learned that postman was a tool used for testing apis through executing web requests.  The xero documentation contained a link a saved configuration setup to test a few basic calls against xeros api
+After not being able to send invoices through xero's api wrapper I looked for potential alternatives. I spent some time looking through the xero api docs at .....  I stumbled upon an entry regarding postman.  I learned that postman was a tool used for testing apis through executing web requests. 
+
+
+![Data comparison table](/assets/postman.JPG)
+
+The xero documentation contained a link a saved configuration setup to test a few basic calls against xeros api
+
+
+
 To configure postman, I had to enter xero connection details including
 
 ClientID 
 ClientSecret
 Callback uri
 Scope
- 
-<SCREENSHOT>< SCREENSHOT>
+
   
 running the 'request token' feature i was able to retrieve a access token after a browser xero login prompt this token is used in authorizing further api calls
 so far pretty similar to the current setup in my application
