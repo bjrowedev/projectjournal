@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FInal Post"
-date:   2020-06-02 10:40:00 +1200
+date:   2020-06-05 10:40:00 +1200
 ---
 
 For my final blog, I will like to wrap things ups with particular things I have caught up on and what needs work in the coming days before the final application is ready 
