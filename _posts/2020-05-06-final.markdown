@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "FInal Post"
+date:   2020-06-02 10:40:00 +1200
+---
+
+For my final blog, I will like to wrap things ups with particular things I have caught up on and what needs work in the coming days before the final application is ready 
+
+I have 
+
+* Implemented views as cshtml files which are displayed after requests according to controller logic
+ These views display data given by the controller. The data is a list of json objects which represents response information such as Status, invoiceID, contact etc. 
+ Also the specific reasons for invoices not being sent are also returned in the information which is helpful. For example, I had one of the invoices in my test fail on me because it had a negative quantity(Must have been a refund) the error message was illustrative enough so that the end user could understand why it wouldn't work and fix it in a manual invoice.
+ An automatic error resolution attempt could be feature in the the future if the program if extended
+ 
+* Changed the invoice request style which was originally multiple requests for each invoice. Now its a single request containing multiple invoice nodes. 
+ This fixes the too many API requests issue which had came to mind recently
+ 
+* Conducted a large scale test with >70 invoices it was a success with the demo company,
+ unfortunately i have yet to test it with blueberries systems because they are still at large with wrapping up end of month duties(Which this application will replace a large portion of when implemented)
+
+
+
+I have yet to 
+
+* Finish designs to my views to make them look appealing 
+* Create a method to upload csv files manually when CSP’s api is not returning client data (Does not currently)
+* Refactor a few static variables used for trouble shooting so that the application does not bug out upon repeated use(Currently retains data such as json data which makes future api calls invalid)
+* Finish basic documentation for future work on the application
+
+overall im happy with the placement, knowledge on subjects such as:
+* Asp net 
+* MVC implementation 
+* Xero API
+is valuable to have
+
+probably couldve saved myself alot of confusing by learning the technologies individually rather than all at once but
+overall I am happy with the application I have produced and hope it serves as a dependable tool.
+Excited to smooth of the edges now and deploy it.
