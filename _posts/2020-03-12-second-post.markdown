@@ -29,7 +29,7 @@ But I have been working on several things which will help me with main project:
     
     * Requires some uncoupling of features, might be able to use some of the ideas in the actual project
     
-![CSV tool screenshot]("https://raw.githubusercontent.com/bjrowedev/projectjournal/master/assets/csvtool.PNG")
+![CSV tool screenshot](https://raw.githubusercontent.com/bjrowedev/projectjournal/master/assets/cvstool.PNG)
     
 (Yes The interface is kinda gross at the moment )
 
