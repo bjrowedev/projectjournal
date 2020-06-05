@@ -8,7 +8,7 @@ issues understanding the xero wrapper
 After not being able to send invoices through xero's api wrapper I looked for potential alternatives. I spent some time looking through the xero api docs at .....  I stumbled upon an entry regarding postman.  I learned that postman was a tool used for testing apis through executing web requests. 
 
 
-![Data comparison table](/assets/postman.JPG)
+![Image](/assets/postman.JPG)
 
 The xero documentation contained a link a saved configuration setup to test a few basic calls against xeros api
 
