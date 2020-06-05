@@ -1,15 +1,14 @@
 ---
 layout: post
-title:  "Draft  | Multiple access?"
+title:  "Multiple users?"
 date:   2020-06-02 10:40:00 +1200
 ---
 
-One concern which recently came to mind is how the web application performs when accessed by multiple users simultaneously.
-In theory there will only ever be a single user at a time but will additional users cause system instability?
+One concern which recently came to mind is how the web application performs when accessed by multiple users simultaneously. In theory there will only ever be a single user at a time but will additional users cause system instability?
+Multiple users modifying the same JSON variable could result in the invoice being inaccurate or produce erroneous invoice requests. Although, given the scope of blueberry IT the program should be run by a single client once per month. But mistakes can happen. In a future blog I will be exploring
 
-Multiple users modifying the same JSON variable could result in the invoice being inaccurate or produce erroneous invoice requests. Although, given the scope of blueberry IT the program should br run by a single client once per month.
-But mistakes can happen.
-In a future blog I will be exploring 
-- the concequences of multiple clients 
-- ASsesing the importance of resolving the issue 
-- looking at potential fixes 
+-the concequences of multiple clients
+-Asesing the importance of resolving the issue
+-looking at potential fixes
+
+
