@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Second Post | Preparations"
+title:  "Preparations"
 date:   2020-03-12 09:50:00 +1200
 ---
 This week,
