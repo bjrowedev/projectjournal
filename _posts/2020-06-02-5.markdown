@@ -5,12 +5,18 @@ date:   2020-06-02 10:40:00 +1200
 ---
 
 Over the past week I have been learning more about the Oauth2 authentication process - the system used by xeros login. Thought I'd take an opportunity to record what I know to further cement the process in my head.
+
 Oauth2 is the system used in authorizing a client with a xero application.
+
 It requires an 'Application' to be created via the xero dev dashboard (Or other implementations equivalent) This requires the input of several variables including: Callback URL, Application Name. Once setup, the application provides several necessary parameters to perform authorization between client and API Including
-Client ID - The ID associated with the application, remains constant for all application needing to access it
-ClientSecret - Once generated cannot be retrieved again,  Identifies client end, can have multiple secrets, can be deleted to revoke access to the application
+
+* Client ID - The ID associated with the application, remains constant for all application needing to access it
+* ClientSecret - Once generated cannot be retrieved again, Identifies client end, can have multiple secrets, can be deleted to revoke     access to the application
+
 With these details we can establish a connection through oAuth2, Making this connection returns a "State" which is used in the URL for another authorization request.
+
 The next request contains a 'Scope' (Ege accounting, contacts, accounting.read) which determine the permissions of the authorization being requested. Also, 
+
 The user privileges for companies selected are checked against the permissions specified in the request. If this check is a match an authorization token is produced. This token is used in future API calls limited to the determined scope
 
 
