@@ -19,7 +19,7 @@ The next request contains a 'Scope' (Ege accounting, contacts, accounting.read) 
 
 The user privileges for companies selected are checked against the permissions specified in the request. If this check is a match an authorization token is produced. This token is used in future API calls limited to the determined scope
 
-
+![Image](/assets/oauth.png)
 
 SOURCE (https://habr.com/en/post/449182/)
 This access token expires after 30 mins, thankfully a refresh token is also provided which is used to request another access token which enables longer sessions. Although, this wont be relevant for my use case it's still good to know in case things change.
