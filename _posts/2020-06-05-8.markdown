@@ -32,6 +32,7 @@ overall im happy with the placement, knowledge on subjects such as:
 * Asp net 
 * MVC implementation 
 * Xero API
+
 is valuable to have
 
 probably couldve saved myself alot of confusing by learning the technologies individually rather than all at once but
