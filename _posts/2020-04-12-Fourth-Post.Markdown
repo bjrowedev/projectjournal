@@ -10,7 +10,7 @@ I've been working on my CSV tool to handle data from CSP spreadsheet As of now, 
 * Generate the due date (20th of following month )
 
 
-![texture theme preview](../assets/csvreloaded.PNG)
+![csv tool reloaded](https://raw.githubusercontent.com/bjrowedev/projectjournal/master/assets/csvreloaded.PNG)
 
 
 I can also delete entries and modify them via the datagrid view however, these functions will not be useful in the final product. Infact, the program is likely to be devoid of any interface depicting the data as its not necessary for the programs operation, it's simply an easy way to see if the data is manipulating correctly.
